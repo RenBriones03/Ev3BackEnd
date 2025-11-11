@@ -1,0 +1,71 @@
+# ARCHIVOS DE PYTHON
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de entorno
+.env
+*.env
+
+# ENTORNO VIRTUAL
+venv/
+ENV/
+env/
+.venv/
+
+
+
+# ARCHIVOS DE DJANGO
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+
+
+
+# Archivos temporales
+tmp/
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# SISTEMA OPERATIVO / EDITORES
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+.history/
+
+# PyCharm
+.idea/
+
+
+# BACKUPS Y EXTRA
+*.bak
+*.swp
+*.swo
+*.tmp
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# DOCUMENTACIÓN
+*.docx
+*.pdf
+*.xlsx
+*.csv

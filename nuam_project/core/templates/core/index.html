@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<section class="converter">
+    <h2>Conversor de Monedas</h2>
+    <div class="converter-box">
+        <input id="amount" type="number" placeholder="Monto" min="0">
+        <select id="from">
+            <option>CLP</option><option>COP</option><option>PEN</option><option>USD</option>
+        </select>
+        →
+        <select id="to">
+            <option>USD</option><option>CLP</option><option>COP</option><option>PEN</option>
+        </select>
+        <button onclick="convertCurrency()">Convertir</button>
+    </div>
+    <p id="result"></p>
+</section>
+{% endblock %}

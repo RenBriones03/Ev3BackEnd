@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<section class="transactions">
+    <h2>Gestión de Transacciones</h2>
+
+    <form id="txForm" onsubmit="createTransaction(event)">
+        <input id="desc" placeholder="Descripción" required>
+        <input id="amountTx" type="number" step="0.01" placeholder="Monto" required>
+        <select id="currencyTx">
+            <option>CLP</option><option>COP</option><option>PEN</option><option>USD</option>
+        </select>
+        <select id="locationTx">
+            <option value="CL">Chile</option>
+            <option value="CO">Colombia</option>
+            <option value="PE">Perú</option>
+            <option value="US">Estados Unidos</option>
+        </select>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h3>Lista de Transacciones</h3>
+    <table id="txTable">
+        <thead>
+            <tr>
+                <th>ID</th><th>Descripción</th><th>Monto</th><th>Moneda</th><th>Ubicación</th><th>Monto en USD</th><th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</section>
+{% endblock %}

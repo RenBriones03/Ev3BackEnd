@@ -1,0 +1,15 @@
+<h2>Tasas actuales</h2>
+<table border="1" style="margin-top:10px;">
+    <tr>
+        <th>Moneda</th>
+        <th>1 USD =</th>
+    </tr>
+    {% for rate in rates %}
+        {% if rate.currency != 'USD' %}
+        <tr>
+            <td>{{ rate.currency }}</td>
+            <td>{{ rate.rate_to_usd|floatformat:0|divisibleby:False }}</td>
+        </tr>
+        {% endif %}
+    {% endfor %}
+</table>
