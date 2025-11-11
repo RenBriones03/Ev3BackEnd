@@ -33,8 +33,8 @@ sudo apt install -y python3 python3-pip python3-venv git
 git clone https://github.com/RenBriones03/Ev3BackEnd
 cd nuam_project
 
-4. Crea el entorno virtual
-python3 -m venv venv
+4. Activar el entorno virtual
+cd nuam_project
 source venv/bin/activate
 
 5. Instala las dependencias del proyecto
@@ -64,7 +64,7 @@ git clone https://github.com/tuusuario/nuam_project.git
 cd nuam_project
 
 2. Crea y activa el entorno virtual
-python -m venv venv
+cd nuam_project
 venv\Scripts\Activate
 
 3. Instala las dependencias
